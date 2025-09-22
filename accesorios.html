@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cloudy Glow Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body{
+     background-color: #FFF5F5	;
+    }
+    
+    .navbar-brand, .navbar-nav .nav-link {
+      color:#525252!important;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+ <!--Este es el navbar-->
+
+<nav class="navbar navbar-expand-lg shadow-sm" style="background-color:#F8C8DC;">
+  <div class="container-fluid">
+    
+ <a class="navbar-brand d-flex align-items-center" href="index.html">
+  <img src="img/cloudyglow.png" alt="Logo" width="80" height="80" class="d-inline-block me-2 rounded-circle">
+   </a>
+
+  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+     <a class="nav-link fw-semibold text-dark px-3" href="#">Inicio</a>
+   
+     <li class="nav-item">
+    </li>
+ 
+ <li class="nav-item">
+   <a class="nav-link fw-semibold text-dark px-3" href="#">Nuestro Equipo</a>
+   </li>
+        
+  <li class="nav-item dropdown">
+   <a class="nav-link dropdown-toggle fw-semibold text-dark px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Categorías
+   </a>
+   <ul class="dropdown-menu border-0 shadow-sm">
+  <li><a class="dropdown-item" href="#">Rostro</a></li>
+   <li><a class="dropdown-item" href="#">Ojos</a></li>
+   <li><a class="dropdown-item" href="#">Labios</a></li>
+  <li><hr class="dropdown-divider"></li>
+   <li><a class="dropdown-item" href="#">Accesorios</a></li>
+     </ul>
+     </li>
+    </ul>
+
+ <form class="d-flex" role="search">
+   <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar..." aria-label="Buscar">
+     <button class="btn rounded-pill px-4" type="submit" style="background-color: #ff69b4; color: white; border: none;">Buscar</button>
+    </form>
+    </div>
+    </div>
+
+</nav>
+
+
+<!--Fin del navbar-->
+
+
+<!--Carousel--> 
+
+    <div class="container p-4 d-flex justify-content-center">
+    <div class="container-fluid d-flex  ">
+    <div class="col-5 md-10 p-4">
+    <div id="pan" class="carousel slide" data-bs-ride="carousel">
+
+         <div class="carousel-indicators">
+    <button type="button" data-bs-target="#pan" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#pan" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#pan" data-bs-slide-to="2"></button>
+  </div>
+
+     <div class="carousel-inner rounded shadow">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/1200x/44/29/46/442946e15c3c1ec5a35aa5990c6da5f4.jpg" alt="pulseras" class="d-block w-100 img-fluid">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/b9/15/af/b915af38e38c00a42e222407dbbcda90.jpg" alt="aretes" class="d-block w-100 img-fluid">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/cf/0d/dd/cf0ddd91004e20a4f44e16388f7ce520.jpg" alt="collar" class="d-block w-100 img-fluid">
+    </div>
+  </div>
+
+   <button class="carousel-control-prev" type="button" data-bs-target="#pan" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#pan" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+    </div>
+    </div>
+    </div>
+     
+<!--Fin del Carousel-->
+
+
+<!-- Sección de Aretes-->
+
+     <div class="bg-light p-4 shadow-sm">
+    <div class="container my-5">
+  <h2 class="text-center fw-bold mb-4">¡Aretes!</h2>
+  
+  <div class="row g-4">
+  
+  <div class="col-md-3 shadow p-4">
+  <div class="card h-100 shadow-sm border-0">
+   <img src="https://i.pinimg.com/736x/9b/69/11/9b69117c6c7fc9470a4c07b31308e4f6.jpg" 
+    class="card-img-top rounded-top" alt="Arete">
+   <div class="card-body text-center">
+  <h5 class="card-title">Pendiente con perlita colgante de oro.</h5>
+    <p class="card-text text-muted">$13.00</p>
+    <a href="#" class="btn btn-sm" style="background-color:#F8C8DC; color:white;">Comprar</a>
+  </div>
+  </div>
+  </div>
+
+  
+   <div class="col-md-3 shadow p-4">
+  <div class="card h-100 shadow-sm border-0">
+  <img src="https://i.pinimg.com/736x/48/9d/02/489d0288839e2d47e6f6c21962b62310.jpg" 
+    class="card-img-top rounded-top" alt="Arete">
+   <div class="card-body text-center">
+    <h5 class="card-title">Pendiente de perlita pequeño de oro.</h5>
+      <p class="card-text text-muted">$15.00</p>
+    <a href="#" class="btn btn-sm" style="background-color:#F8C8DC; color:white;">Comprar</a>
+  </div>
+  </div>
+  </div>
+
+
+   <div class="col-md-3 shadow p-4">
+  <div class="card h-100 shadow-sm border-0">
+  <img src="https://i.pinimg.com/736x/64/a9/66/64a9662ba9830da797284d9d29e298c0.jpg"
+    class="card-img-top rounded-top" alt="Arete">
+   <div class="card-body text-center">
+    <h5 class="card-title">Pendiente de oro con perlas pequeñas.</h5>
+      <p class="card-text text-muted">$17.00</p>
+    <a href="#" class="btn btn-sm" style="background-color:#F8C8DC; color:white;">Comprar</a>
+  </div>
+  </div>
+  </div>
+
+  
+   <div class="col-md-3 shadow p-4">
+  <div class="card h-100 shadow-sm border-0">
+  <img src="https://i.pinimg.com/736x/51/33/0f/51330f556e3637e1d45a06a9c3c13fad.jpg" 
+  class="card-img-top rounded-top">
+  <div class="card-body text-center">
+   <h5 class="card-title">Pendientes colgantes de corazón.</h5>
+     <p class="card-text text-muted">$19.00</p>
+    <a href="#" class="btn btn-sm" style="background-color:#F8C8DC; color:white;">Comprar</a>
+   </div>
+   </div>
+   </div>
+   </div>
+  </div>
+    </div>
+
+<!--Fin de la sección de aretes-->
+
+
+<!--Sección de collares-->
+
+     <div class="bg-light p-4 shadow-sm">
+    <div class="container my-5">
+  <h2 class="text-center fw-bold mb-4">¡Collares!</h2>
+  
+  <div class="row g-4">
+  
+  <div class="col-md-3 shadow p-4">
+  <div class="card h-100 shadow-sm border-0">
+   <img src="https://i.pinimg.com/1200x/8b/b3/ee/8bb3eebac7416e890783caf93b5fdac2.jpg" 
+    class="card-img-top rounded-top" alt="Arete">
+   <div class="card-body text-center">
+  <h5 class="card-title">Collar con abertura circulo y zirconia.</h5>
+    <p class="card-text text-muted">$24.00</p>
+    <a href="#" class="btn btn-sm" style="background-color:#F8C8DC; color:white;">Comprar</a>
+  </div>
+  </div>
+  </div>
+
+  
+   <div class="col-md-3 shadow p-4">
+  <div class="card h-100 shadow-sm border-0">
+  <img src="https://i.pinimg.com/1200x/62/2a/fe/622afeb1cfaec63cf159693dd983289d.jpg" 
+    class="card-img-top rounded-top" alt="Arete">
+   <div class="card-body text-center">
+    <h5 class="card-title">Collar de conchita marina.</h5>
+      <p class="card-text text-muted">$15.00</p>
+    <a href="#" class="btn btn-sm" style="background-color:#F8C8DC; color:white;">Comprar</a>
+  </div>
+  </div>
+  </div>
+
+
+   <div class="col-md-3 shadow p-4">
+  <div class="card h-100 shadow-sm border-0">
+  <img src="https://i.pinimg.com/1200x/15/70/5c/15705c72d3e3b4ef6be448d576e6e686.jpg"
+    class="card-img-top rounded-top" alt="Arete">
+   <div class="card-body text-center">
+    <h5 class="card-title">Collar de oro con diamantito.</h5>
+      <p class="card-text text-muted">$28.00</p>
+    <a href="#" class="btn btn-sm" style="background-color:#F8C8DC; color:white;">Comprar</a>
+  </div>
+  </div>
+  </div>
+
+  
+   <div class="col-md-3 shadow p-4">
+  <div class="card h-100 shadow-sm border-0">
+  <img src="https://i.pinimg.com/1200x/ea/35/f7/ea35f7dcb38ad103372856fea6290c6a.jpg" 
+  class="card-img-top rounded-top">
+  <div class="card-body text-center">
+   <h5 class="card-title">Collar de oro de cerecita.</h5>
+     <p class="card-text text-muted">$16.00</p>
+    <a href="#" class="btn btn-sm" style="background-color:#F8C8DC; color:white;">Comprar</a>
+   </div>
+   </div>
+   </div>
+   </div>
+  </div>
+    </div>
+
+<!-- Footer -->
+ <div class=>
+<footer class="text-center text-lg-start text-muted" style= background-color:#F8C8DC>
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+ <span class="fw-bold">Tu rutina de belleza empieza aquí, pero continúa en nuestras redes sociales:</span>
+    </div>
+  <div>
+  <a href="https://www.facebook.com/share/14ERyXaLdst/" class="me-4 text-reset"> </a>
+  <i class="fab fa-facebook-f"></i>
+    <a href="https://www.instagram.com/cloudyglowbeauty/" class="me-4 text-reset"> </a>
+   <i class="fab fa-instagram"></i>
+    <a href="https://github.com/GabrielaReyes27/Apopapipol" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+   </a>
+  </div>
+  </section>
+  <section class="">
+  <div class="container text-center text-md-start mt-5">
+  <div class="row mt-3">
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <h6 class="text-uppercase fw-bold mb-4">
+     <i class="fa-solid fa-star"></i>Cloudy Glow </h6>
+   <p>Cloudy Glow es más que maquillaje: es expresión, color y confianza. Nos apasiona ayudarte a resaltar tu belleza única con productos pensados para ti. Mantente al tanto de nuestras novedades, tips y lanzamientos siguiéndonos en redes sociales. 
+    ¡Únete a nuestra comunidad y brilla con nosotros todos los días! </p>
+ </div>
+ <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+   <h6 class="text-uppercase fw-bold mb-4">  Productos </h6>
+  <p> <a href="#!" class="text-reset">Labios</a> </p>
+  <p><a href="#!" class="text-reset">Ojos</a> </p>     
+   <p> <a href="#!" class="text-reset">Rostro</a>  </p>
+    <p> <a href="#!" class="text-reset">Accesorios</a>  </p>
+  </div>
+
+  
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+ <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+  <p><i class="fas fa-home me-3"></i> Apopa, SV</p>
+  <p><i class="fas fa-phone me-3"></i> +503 7104-5621</p>
+ </div>
+ </div>
+      
+  </div>
+  </section>
+  <div class="text-center p-4" style="background-color: #FFF5F5;">
+    © Created by Apopapipol
+  <a class="text-reset fw-bold" href="index.html">Cloudy Glow</a>
+</div>
+</footer>
+ </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
