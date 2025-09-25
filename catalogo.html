@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     body{
      background-color: #FFF5F5	;
@@ -46,13 +47,13 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-     <a class="nav-link fw-semibold text-dark px-3" href="#">Inicio</a>
+     <a class="nav-link fw-semibold text-dark px-3" href="index.html">Inicio</a>
    
      <li class="nav-item">
     </li>
  
  <li class="nav-item">
-   <a class="nav-link fw-semibold text-dark px-3" href="#">Nuestro Equipo</a>
+   <a class="nav-link fw-semibold text-dark px-3" href="sobrenosotras.html">Nuestro Equipo</a>
    </li>
         
   <li class="nav-item dropdown">
@@ -60,11 +61,11 @@
     Categorías
    </a>
    <ul class="dropdown-menu border-0 shadow-sm">
-  <li><a class="dropdown-item" href="#">Rostro</a></li>
-   <li><a class="dropdown-item" href="#">Ojos</a></li>
-   <li><a class="dropdown-item" href="#">Labios</a></li>
+  <li><a class="dropdown-item" href="rostro.html">Rostro</a></li>
+   <li><a class="dropdown-item" href="ojos.html">Ojos</a></li>
+   <li><a class="dropdown-item" href="labios.html">Labios</a></li>
   <li><hr class="dropdown-divider"></li>
-   <li><a class="dropdown-item" href="#">Accesorios</a></li>
+   <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
      </ul>
      </li>
     </ul>
@@ -78,104 +79,154 @@
 
 </nav>
 
+
 <!--Fin del navbar-->
 
-<!--Inicio del catalog-->
+<!--Inicio del catalogo-->
 <div class="container">
 
 <div class="text-center my-5">
-<h1>Catálogo</h1>
+<h1 class="fw-bold mb-4">Catálogo</h1>
 <h4>Descubre nuestro Catálogo con variedad de marcas y productos</h4>
-  <h1 class="color-rosa text-center my-4">Elf</h1>
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Tendencias</h2>
+
+  <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Video 1 -->
+      <div class="carousel-item active">
+        <div class="ratio ratio-16x9">
+          <iframe src="vid/video2.mp4" title="Video 1" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="carousel-item">
+        <div class="ratio ratio-16x9">
+          <iframe src="vid/video1.mp4" title="Video 2" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="carousel-item">
+        <div class="ratio ratio-16x9">
+          <iframe src="vid/video3.mp4" title="Video 3" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+
+  <h1 class="text-center my-4">Elf</h1>
 <br>
 <div class="dd-cat mt-3">
           <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 ">
          <!--primer producto-->
          <div class="col">
          <div class="card h-100">
-         <img src="imf/thumbnail_1000192967.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="protector solar">
+         <img src="https://m.media-amazon.com/images/I/21KIZXmjktL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="protector solar">
           <div class="card-body">
           <h5 class="card-title">Sun in the stun <br> Protector solar</h5>
-          <p class="card-text">Protector solar en barra con f-50.</p>
+          <p class="card-text">$35.00</p>
+          <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
           </div>
         </div>
-          </div>      
+          </div>
+          
 
 <!--segundo-->
 <div class="col">
          <div class="card h-100">       
-            <img src="imf/thumbnail_1000192972.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
+            <img src="https://m.media-amazon.com/images/I/51En247FuNL._SX425_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
             <div class="card-body">
             <h5 class="card-title"> Glow reviver <br> Lip Oil
             </h5>
-            <p class="card-text">Aceite de labios, hidrata y da color.</p>
+            <p class="card-text">$17.00</p>
+            <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
           </div>
          </div>
         </div>
 <!--tercero-->
 <div class="col">
-         <div class="card h-100">       
-            <img src="imf/thumbnail_1000192968.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
+         <div class="card h-100">      
+            <img src="https://m.media-amazon.com/images/I/51MkHgSIAwL._SX425_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
             <div class="card-body">
-            <h5 class="card-title"> limpiador de cepillosy esponjas
+            <h5 class="card-title"> limpiador de cepillos y esponjas
             </h5>
-            <p class="card-text"> Formúla efectiva para limpiar cepillos y esponjas.</p>
+            <p class="card-text">$20.00</p>
+            <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
           </div>
          </div>
         </div>
 <!--cuarto-->
 <div class="col">
         <div class="card h-100">       
-        <img src="imf/thumbnail_1000192970.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
+        <img src="https://m.media-amazon.com/images/I/31klfxHFvXL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
         <div class="card-body">
-        <h5 class="card-title"> Halo Glow Powder Puff
+        <h5 class="card-title"> Spray fijador de maquillaje micro fino
         </h5>
-        <p class="card-text">Borla suave y reutilizable para aplicar polvos suletos o compactos.</p>
-        </div>
+        <p class="card-text">$34.50</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+      </div>
         </div>
         </div>
 <!--quinto-->
 <div class="col">
     <div class="card h-100">       
-        <img src="imf/thumbnail_1000192971.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
+        <img src="https://m.media-amazon.com/images/I/310WpuVb5LL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
         <div class="card-body">
-        <h5 class="card-title"> Halo Glow Powder Puff
+        <h5 class="card-title">N Roll - Máscara rizadora para pestañas
         </h5>
-        <p class="card-text">Borla suave y reutilizable para aplicar polvos suletos o compactos.</p>
-        </div>
+        <p class="card-text">$11.09</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+      </div>
         </div>
         </div>
 <!--sexto-->
 <div class="col">
     <div class="card h-100">       
-        <img src="imf/thumbnail_1000193068.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
+        <img src="https://m.media-amazon.com/images/I/31Kdi-ROc6L._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
         <div class="card-body">
-        <h5 class="card-title"> Halo Glow Powder Puff
+        <h5 class="card-title">  SKIN Blemish Breakthrough - Gel para combatir el acné
         </h5>
-        <p class="card-text">Borla suave y reutilizable para aplicar polvos suletos o compactos.</p>
-        </div>
+        <p class="card-text">$40.03</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+      </div>
         </div>
         </div>
     <!--setimo-->
 <div class="col">
     <div class="card h-100">       
-        <img src="imf/thumbnail_1000193067.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
+        <img src="https://m.media-amazon.com/images/I/61A3eADVonL._SX425_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
         <div class="card-body">
-        <h5 class="card-title"> Halo Glow Powder Puff
+        <h5 class="card-title"> Serum Anti-Envejecimiento 
         </h5>
-        <p class="card-text">Borla suave y reutilizable para aplicar polvos suletos o compactos.</p>
-        </div>
+        <p class="card-text">$50.00</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+      </div>
         </div>
         </div>
 <!--octavo-->
 <div class="col">
     <div class="card h-100">       
-        <img src="imf/thumbnail_1000192969.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
+        <img src="https://m.media-amazon.com/images/I/610VLWJ0fzL._SX425_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">   
         <div class="card-body">
-        <h5 class="card-title"> Halo Glow Powder Puff
+        <h5 class="card-title"> Base de masilla sin poros
         </h5>
-        <p class="card-text">Borla suave y reutilizable para aplicar polvos suletos o compactos.</p>
-        </div>
+        <p class="card-text">$9.00</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+      </div>
         </div>
         </div>
     
@@ -192,849 +243,330 @@
 <!--primer producto-->
     <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193141.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://vanillacosmetics.com/wp-content/uploads/2024/05/IMG_4638.jpeg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Insta-Ready Powder Puff</h5>
+          <p class="card-text">$6.00</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
 
-<!--segubdo-->
+<!--segundo-->
  <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193138.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://m.media-amazon.com/images/I/51ofr-j4q9L._UF1000,1000_QL80_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Labial Liquido matte</h5>
+          <p class="card-text">$9.00</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
 <!--tercero-->
 <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193137.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://xoxo-eg.com/cdn/shop/files/SHEGLAM-Peel-Talk-Lip-Tint-XOXO-Beauty-Cosmetics-2_533x.jpg?v=1740780732" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Peel Talk - Tinte labial </h5>
+          <p class="card-text">$5.90</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
 <!--cuarto-->
 <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193136.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://m.media-amazon.com/images/I/511zi6VylSL._UF1000,1000_QL80_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Base de maquillaje de cobertura completa</h5>
+          <p class="card-text">$12.08</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
 <!--quinto-->
 <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193135.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://ss894.suburbia.com.mx/xl/5010876976.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam polvo iluminador</h5>
+          <p class="card-text">$7.89</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
 <!--sexto-->
 <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193134.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://m.media-amazon.com/images/I/31stsWfUllL._UF1000,1000_QL80_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Iluminador líquido Glow Bloom - Vanilla Frost</h5>
+          <p class="card-text">$4.90</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
 <!--setimo-->
 <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193132.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://img.ltwebstatic.com/v4/j/pi/2025/05/07/1b/1746612793b139c80c43be2c0f9af4f927cb445d3a.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Crystal Glaze - Brillo de labios hidratante</h5>
+          <p class="card-text">$5.57</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
 <!--octvo-->
 <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193131.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://images-cdn.ubuy.sv/65b326de03871e110a6e8d1d-sheglam-pout-perfect-pink-flamingo-lip.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Pout Perfect Lip Plumpler Gloss</h5>
+          <p class="card-text">$4.98</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--noveno-->
+
     <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193130.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://m.media-amazon.com/images/I/510wz2mOB3L._UF1000,1000_QL80_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam 2 en 1 delineador de labios mate y lápiz labial de larga</h5>
+          <p class="card-text">$6.77</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--decimo-->
+
     <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193129.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://img.ltwebstatic.com/images3_pi/2023/05/18/16843899894e17f8ee6fe4c32c85a5da3105eb3d89.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Gloss labial</h5>
+          <p class="card-text">$4.56</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--decimo1-->
+
  <div class="col">
       <div class="card h-100">
-        <img src="ims/thumbnail_1000193127.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://img.ltwebstatic.com/images3_pi/2025/01/21/38/1737450604f783941d3e96aa364a2d2bd1bb45b19b_thumbnail_1200x.webp" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--decimo2-->
-<div class="col">
-      <div class="card h-100">
-        <img src="ims/thumbnail_1000193126.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--decimo3-->
-<div class="col">
-      <div class="card h-100">
-        <img src="ims/thumbnail_1000193125.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--decimo4-->
-<div class="col">
-      <div class="card h-100">
-        <img src="ims/thumbnail_1000193124.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--decimo5-->
-<div class="col">
-      <div class="card h-100">
-        <img src="ims/thumbnail_1000193122.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--decimo6-->
-<div class="col">
-      <div class="card h-100">
-        <img src="ims/thumbnail_1000193128 (1).jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Sheglam Rizador de pestañas Made For Me</h5>
+          <p class="card-text">$3.67</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
 
-<!--estos divs son de sheglam-->
+<div class="col">
+      <div class="card h-100">
+        <img src="https://img.ltwebstatic.com/images3_pi/2022/10/17/16659716295af5dccf635a595654369b414066a349_thumbnail_1200x.webp" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <div class="card-body">
+          <h5 class="card-title">Sheglam Labial acabado matte</h5>
+          <p class="card-text">$5.89</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+        </div>
       </div>
+    </div>
+
+<div class="col">
+      <div class="card h-100">
+        <img src="https://maquillajeimportadocolombia.com/wp-content/uploads/2025/01/1724065447d41534b5edca3ee7cc35c8a265871241.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <div class="card-body">
+          <h5 class="card-title">Sheglam X Power Girls Gloss labial</h5>
+          <p class="card-text">$2.34</p>
+      <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+<div class="col">
+      <div class="card h-100">
+        <img src="https://img.ltwebstatic.com/images3_pi/2025/01/22/3c/1737523963b6814264e54ad2c37494df1dc4fb772b.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <div class="card-body">
+          <h5 class="card-title">Hello Kitty SHEGLAM Borla de polvos Cupido Cutie</h5>
+          <p class="card-text">$2.40</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+<div class="col">
+      <div class="card h-100">
+        <img src="https://m.media-amazon.com/images/I/41WVepgVGJL._SL1500_.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <div class="card-body">
+          <h5 class="card-title">Sheglam Brocha para rubor líquido Color Bloom</h5>
+          <p class="card-text">1.98</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+<div class="col">
+      <div class="card h-100">
+        <img src="https://img.ltwebstatic.com/v4/j/pi/2025/09/01/61/1756691402bf474d27ba2fc28c5a6c472592d4eabc.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <div class="card-body">
+          <h5 class="card-title">Spray fijador Forever de The Twilight Saga X SHEGLAM</h5>
+          <p class="card-text">$7.69</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
+        </div>
+      </div>
+    </div>
+
   </div>
+</div>
 
-  <!--aqui empieza pixie-->
-  <h1 class="color-rosa text-center my-4">Pix!</h1>
+  <!--aqui empieza givenchy-->
+  <h1 class="color-rosa text-center my-4">Givenchy</h1>
 
 <div class="dd-cat mt-5">
-  <h2 class="text-center mb-4">Descubre la magia de todos los productos pix!</h2>
+  <h2 class="text-center mb-4">Nuevos Lanzamientos</h2>
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
 
     <!--primer producto-->
     <div class="col">
       <div class="card h-100">
-        <img src="imp/thumbnail_1000193164.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://www.sephora.com/productimages/sku/s2672046-main-zoom.jpg?imwidth=612" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Bálsamo labial negro universal hidratante reactivo al pH Le Rouge Interdit </h5>
+          <p class="card-text">$45.98</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--segundo-->
+
 <div class="col">
       <div class="card h-100">
-        <img src="imp/thumbnail_1000193159.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://www.sephora.com/productimages/sku/s2749539-main-zoom.jpg?imwidth=612" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Bálsamo labial Rose Perfecto Hidratación 24H</h5>
+          <p class="card-text">$54.70</p>
+        <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--tercero-->
+
 <div class="col">
       <div class="card h-100">
-        <img src="imp/thumbnail_1000193163.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://www.sephora.com/productimages/sku/s2748119-main-zoom.jpg?imwidth=612" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Corrector para el cuidado de la piel Prisme Libre</h5>
+          <p class="card-text">$48.78</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--cuarto-->
 <div class="col">
       <div class="card h-100">
-        <img src="imp/thumbnail_1000193166.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://www.sephora.com/productimages/sku/s2637015-main-zoom.jpg?imwidth=612" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Prisme Libre Skin-Caring 24H Hidratante + Radiante + Corrector Cremoso</h5>
+          <p class="card-text">$56.32</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--quinto-->
+
 <div class="col">
       <div class="card h-100">
-        <img src="imp/thumbnail_1000193161.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://www.sephora.com/productimages/sku/s2691178-main-zoom.jpg?imwidth=612" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Prisme Libre Colorete en Polvo Suelto 12H Radiance</h5>
+          <p class="card-text">$44.66</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--sexto-->
+
 <div class="col">
       <div class="card h-100">
-        <img src="imp/thumbnail_1000193162.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://www.sephora.com/productimages/sku/s2749554-main-zoom.jpg?imwidth=612" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Bálsamo labial hidratante con color y brillo Rose Perfecto</h5>
+          <p class="card-text">$55.00</p>
+      <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--setimo-->
+
 <div class="col">
       <div class="card h-100">
-        <img src="imp/thumbnail_1000193071.jpg"card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://www.sephora.com/productimages/sku/s2788602-main-zoom.jpg?imwidth=612" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Polvos sueltos iluminadores y correctores de color Prisme Libre</h5>
+          <p class="card-text">$48.90</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--octavo-->
+
 <div class="col">
       <div class="card h-100">
-        <img src="imp/thumbnail_1000193072.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
+        <img src="https://www.sephora.com/productimages/sku/s2882173-main-zoom.jpg?imwidth=612" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
         <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
+          <h5 class="card-title">Lápiz labial mate de larga duración Le Rouge Velvet</h5>
+          <p class="card-text">$43.78</p>
+       <a href="" class="btn btn-sm" style="background-color: #FF69b4;color: white;">Comprar</a>
         </div>
       </div>
     </div>
-<!--divs de pixi-->
-  </div>
 </div>
-
-<!--aqui empieza maybeline-->
-<h1 class="color-rosa text-center my-4">Maybelline</h1>
-
-<div class="dd-cat mt-5">
-  <h2 class="text-center mb-4">Nuevos Lanzamientos</h2>
-  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imm/skyhigh.4.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
+ <!-- Footer -->
+<footer class="text-center text-lg-start text-muted" style= "background-color:#F8C8DC";>
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+ <span class="fw-bold">Tu rutina de belleza empieza aquí, pero continúa en nuestras redes sociales:</span>
     </div>
-
-    <div class="col">
-      <div class="card h-100">
-        <img src="imm/glosschile.6.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-     
-    <div class="col">
-      <div class="card h-100">
-        <img src="imm/rimelnegro.1.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-     <div class="col">
-      <div class="card h-100">
-        <img src="imm/thumbnail_1000193079.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
- <div class="col">
-      <div class="card h-100">
-        <img src="imm/labialrosado.3.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card h-100">
-        <img src="imm/correctorbarra.4.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card h-100">
-        <img src="imm/thumbnail_1000193078.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-     <div class="col">
-      <div class="card h-100">
-        <img src="imm/basefitme.2.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--divs de matbelline-->
+  <div>
+  <a href="https://www.facebook.com/share/14ERyXaLdst/" class="me-4 text-reset"> </a>
+  <i class="fab fa-facebook-f"></i>
+    <a href="https://www.instagram.com/cloudyglowbeauty/" class="me-4 text-reset"> </a>
+   <i class="fab fa-instagram"></i>
+    <a href="https://github.com/GabrielaReyes27/Apopapipol" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+   </a>
   </div>
-</div>
-
-<h1 class="color-rosa text-center my-4">Nars</h1>
-
-<div class="dd-cat mt-5">
-  <h2 class="text-center mb-4">Nuevos Lanzamientos</h2>
-  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imn/thumbnail_1000193197.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imn/thumbnail_1000193196.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imn/thumbnail_1000193195.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imn/thumbnail_1000193194.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imn/thumbnail_1000193193.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imn/thumbnail_1000193192.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imn/thumbnail_1000193070.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imn/thumbnail_1000193069.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-  <!--divs de nars-->
+  </section>
+  <section class="">
+  <div class="container text-center text-md-start mt-5">
+  <div class="row mt-3">
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <h6 class="text-uppercase fw-bold mb-4">
+     <i class="fa-solid fa-star"></i>Cloudy Glow </h6>
+   <p>Cloudy Glow es más que maquillaje: es expresión, color y confianza. Nos apasiona ayudarte a resaltar tu belleza única con productos pensados para ti. Mantente al tanto de nuestras novedades, tips y lanzamientos siguiéndonos en redes sociales. 
+    ¡Únete a nuestra comunidad y brilla con nosotros todos los días! </p>
+ </div>
+ <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+   <h6 class="text-uppercase fw-bold mb-4">  Productos </h6>
+  <p> <a href="labios.html" class="text-reset">Labios</a> </p>
+  <p><a href="ojos.html" class="text-reset">Ojos</a> </p>     
+   <p> <a href="rosotro.html" class="text-reset">Rostro</a>  </p>
+    <p> <a href="accesorios.html" class="text-reset">Accesorios</a>  </p>
   </div>
-</div>
 
-  <h1 class="color-rosa text-center my-4">Rare Beauty</h1>
-
-<div class="dd-cat mt-5">
-  <h2 class="text-center mb-4">Nuevos Lanzamientos</h2>
-  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193191.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193190.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193189.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193188.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193187.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193186.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193185.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193184.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193183.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193182.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193181.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imr/thumbnail_1000193179.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-  <!--divs de nars-->
+  
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+ <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+  <p><i class="fas fa-home me-3"></i> Apopa, SV</p>
+  <p><i class="fas fa-phone me-3"></i> +503 7104-5621</p>
+ </div>
+ </div>
+      
   </div>
+  </section>
+  <div class="text-center p-4" style="background-color: #FFF5F5;">
+    © Created by Apopapipol <br> Esta página fue creada por: Jennifer Flores y Paola Gonzáles
+  <a class="text-reset fw-bold" href="index.html">Cloudy Glow</a>
 </div>
+</footer>
 
- <h1 class="color-rosa text-center my-4">Gibson
- </h1>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<div class="dd-cat mt-5">
-  <h2 class="text-center mb-4">Nuevos Lanzamientos</h2>
-  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/gibson1.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/gibson3.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/gibson2.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/gibson4.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/aceite.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/aceiteygotero.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/perfume.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/crma.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-<!--divs de gibson-->
-  </div>
-</div>
-
- <h1 class="color-rosa text-center my-4">Dior
- </h1>
-
-<div class="dd-cat mt-5">
-  <h2 class="text-center mb-4">Nuevos Lanzamientos</h2>
-  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193272.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193264.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193263.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193262.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193261.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193260.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193259.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193258.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193257.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193256.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193255.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193254.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193253.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193252.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193251.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-<!--primer producto-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="imd/thumbnail_1000193250.jpg" class="card-img-top img-fluid rounded my-custom-image" alt="gloss">
-        <div class="card-body">
-          <h5 class="card-title">Halo Glow Powder Puff</h5>
-          <p class="card-text">Borla suave y reutilizable para aplicar polvos sueltos o compactos.</p>
-        </div>
-      </div>
-    </div>
-
-</div> <!-- ✅ CIERRA el .container -->
+</body>
+</html>
     
