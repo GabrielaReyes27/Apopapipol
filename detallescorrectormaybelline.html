@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Producto | True Beauty</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+     background-color: #FFF5F5	;
+    }
+    
+    .navbar-brand, .navbar-nav .nav-link {
+      color:#525252!important;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    :root {
+      --rosa-truebeauty: #ff69b4;
+    }
+
+    body {
+      background-color: #fffafc;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .btn-truebeauty {
+      background-color: var(--rosa-truebeauty);
+      color: white;
+      border: none;
+    }
+
+    .btn-truebeauty:hover {
+      background-color: #ff4fa3;
+    }
+
+    .price {
+      color: var(--rosa-truebeauty);
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!--Este es el navbar-->
+<nav class="navbar navbar-expand-lg shadow-sm" style="background-color:#F8C8DC;">
+  <div class="container-fluid">
+    
+ <a class="navbar-brand d-flex align-items-center" href="index.html">
+  <img src="img/cloudyglow.png" alt="Logo" width="80" height="80" class="d-inline-block me-2 rounded-circle">
+   </a>
+
+  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+     <a class="nav-link fw-semibold text-dark px-3" href="index.html">Inicio</a>
+   
+     <li class="nav-item">
+    </li>
+ 
+ <li class="nav-item">
+   <a class="nav-link fw-semibold text-dark px-3" href="sobrenosotras.html">Nuestro Equipo</a>
+   </li>
+        
+  <li class="nav-item dropdown">
+   <a class="nav-link dropdown-toggle fw-semibold text-dark px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Categorías
+   </a>
+   <ul class="dropdown-menu border-0 shadow-sm">
+  <li><a class="dropdown-item" href="rostro.html">Rostro</a></li>
+   <li><a class="dropdown-item" href="ojos.html">Ojos</a></li>
+   <li><a class="dropdown-item" href="labios.html">Labios</a></li>
+  <li><hr class="dropdown-divider"></li>
+   <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+     </ul>
+     </li>
+    </ul>
+
+ <form class="d-flex" role="search">
+   <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar..." aria-label="Buscar">
+     <button class="btn rounded-pill px-4" type="submit" style="background-color: #ff69b4; color: white; border: none;">Buscar</button>
+    </form>
+    </div>
+    </div>
+
+</nav>
+
+<!-- detalle del Producto -->
+  <div class="container my-5">
+   <div class="row align-items-center">
+    <div class="col-md-6 text-center">
+        <img src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mby/mby25925/l/18.jpg" alt="Labial True Beauty" class="img-fluid rounded shadow-sm">
+</div>
+
+<!-- información -->
+    <div class="col-md-6">
+    <h2 class="fw-bold">Maybelline Instant Anti-Age Eraser Concealer</h2>
+    <p class="text-muted">Marca: <strong>Maybelline New York</strong></p>
+<p>
+ ¡Despídete de las ojeras!  El Instant Anti-Age Eraser Concealer de Maybelline cubre, ilumina y suaviza la piel al instante, dejando un acabado fresco y natural que dura todo el día.
+</p>
+
+<ul>
+  <li>Ideal para todo tipo de piel</li>
+  <li>Cobertura media a alta</li>
+  <li>Acabado natural y sin efecto pesado</li>
+   <li>Libre de crueldad animal 🐰</li>
+</ul>
+<p class="price">$15.00</p>
+
+<!-- Boton para comprar -->
+<button class="btn btn-truebeauty mt-3" data-bs-toggle="modal" data-bs-target="#compraModal">
+    Comprar ahora 
+</button>
+ </div>
+ </div>
+</div>
+
+<!-- Modal de Confirmación de Compra -->
+<div class="modal fade" id="compraModal" tabindex="-1" aria-labelledby="compraModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content text-center">
+     <div class="modal-header" style="background-color: var(--rosa-truebeauty);">
+     <h5 class="modal-title text-white" id="compraModalLabel">Confirmar compra</h5>
+   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+  <img src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mby/mby25925/l/18.jpg" class="img-fluid rounded mb-3" alt="Labial Rosa Encanto">
+  <h5>Maybelline Instant Anti-Age Eraser Concealer</h5>
+  <p class="text-muted">Precio: $15.00</p>
+  <p>¿Deseas confirmar la compra de este producto?</p>
+</div>
+
+<div class="modal-footer justify-content-center">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+  <a href="formulariocompra.html" class="btn btn-truebeauty">Sí, comprar</a>
+</div>
+</div>
+</div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
